@@ -1,0 +1,45 @@
+{
+	"id": "2fb3c583-5d63-4586-8181-001205e6560a",
+	"values": [
+		{
+			"key": "PlatformURLDotnetRun",
+			"value": "http://localhost:5207/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "PlatformURLDocker",
+			"value": "http://localhost:8080/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "PlatformURLClusterIP",
+			"value": "http://localhost:32431/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "CommandsURLDotnetRun",
+			"value": "http://localhost:5068/api/c/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "PlatformURLNginx",
+			"value": "http://acme.com/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "CommandsURLNginx",
+			"value": "http://acme.com/api/c",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2023-08-29T18:25:14.918Z",
+	"_postman_exported_using": "Postman/10.17.4"
+}

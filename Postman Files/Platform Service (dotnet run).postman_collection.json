@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "d393a8b2-5004-403e-89a1-a95fbcbe980c",
+		"name": "Platform Service (dotnet run)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2603692"
+	},
+	"item": [
+		{
+			"name": "Get All Platforms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PlatformURLDotnetRun}}/Platforms",
+					"host": [
+						"{{PlatformURLDotnetRun}}"
+					],
+					"path": [
+						"Platforms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Platform By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PlatformURLDotnetRun}}/Platforms/2",
+					"host": [
+						"{{PlatformURLDotnetRun}}"
+					],
+					"path": [
+						"Platforms",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Platform",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PlatformURLDotnetRun}}/Platforms",
+					"host": [
+						"{{PlatformURLDotnetRun}}"
+					],
+					"path": [
+						"Platforms"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "41c5aa74-87bc-44ab-9315-095bfdaa3d03",
+		"name": "Command Service (dotnet run)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2603692"
+	},
+	"item": [
+		{
+			"name": "Commands",
+			"item": [
+				{
+					"name": "Gat All Commands for Platform",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CommandsURLDotnetRun}}platforms/1/commands",
+							"host": [
+								"{{CommandsURLDotnetRun}}platforms"
+							],
+							"path": [
+								"1",
+								"commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gat Commands for Platform",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CommandsURLDotnetRun}}platforms/1/commands/1",
+							"host": [
+								"{{CommandsURLDotnetRun}}platforms"
+							],
+							"path": [
+								"1",
+								"commands",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Commands for Platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HowTo\": \"Clear screen\",\r\n    \"CommandLine\": \"cls\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{CommandsURLDotnetRun}}platforms/1/commands/",
+							"host": [
+								"{{CommandsURLDotnetRun}}platforms"
+							],
+							"path": [
+								"1",
+								"commands",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Platforms",
+			"item": [
+				{
+					"name": "Platforms Inbound",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{CommandsURLDotnetRun}}platforms/",
+							"host": [
+								"{{CommandsURLDotnetRun}}platforms"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CommandsURLDotnetRun}}platforms/",
+							"host": [
+								"{{CommandsURLDotnetRun}}platforms"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

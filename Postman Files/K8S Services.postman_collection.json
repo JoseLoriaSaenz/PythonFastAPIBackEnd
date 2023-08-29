@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "e2f8fe91-f5b6-44e8-9e9a-af4754a28bd8",
+		"name": "K8S Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2603692"
+	},
+	"item": [
+		{
+			"name": "Platform using Node Port",
+			"item": [
+				{
+					"name": "Get All Platforms K8S",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PlatformURLClusterIP}}/Platforms",
+							"host": [
+								"{{PlatformURLClusterIP}}"
+							],
+							"path": [
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Platform By Id K8S",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PlatformURLClusterIP}}/Platforms/2",
+							"host": [
+								"{{PlatformURLClusterIP}}"
+							],
+							"path": [
+								"Platforms",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Platform K8S",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PlatformURLClusterIP}}/Platforms",
+							"host": [
+								"{{PlatformURLClusterIP}}"
+							],
+							"path": [
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Platform using Nginx",
+			"item": [
+				{
+					"name": "Get All Platforms K8S",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PlatformURLNginx}}/Platforms",
+							"host": [
+								"{{PlatformURLNginx}}"
+							],
+							"path": [
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Platform By Id K8S",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{PlatformURLNginx}}/Platforms/3",
+							"host": [
+								"{{PlatformURLNginx}}"
+							],
+							"path": [
+								"Platforms",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Platform K8S",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{PlatformURLNginx}}/Platforms",
+							"host": [
+								"{{PlatformURLNginx}}"
+							],
+							"path": [
+								"Platforms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Command using Nginx",
+			"item": [
+				{
+					"name": "Get All Platforms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CommandsURLNginx}}/platforms/",
+							"host": [
+								"{{CommandsURLNginx}}"
+							],
+							"path": [
+								"platforms",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Commands for Platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"HowTo\": \"Clear screen\",\r\n    \"CommandLine\": \"cls\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{CommandsURLNginx}}/platforms/6/commands/",
+							"host": [
+								"{{CommandsURLNginx}}"
+							],
+							"path": [
+								"platforms",
+								"6",
+								"commands",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gat All Commands for Platform",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{CommandsURLNginx}}/platforms/6/commands",
+							"host": [
+								"{{CommandsURLNginx}}"
+							],
+							"path": [
+								"platforms",
+								"6",
+								"commands"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

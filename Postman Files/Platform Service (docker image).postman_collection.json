@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "0e1c38f2-b286-48fa-a870-35b49fe12ef9",
+		"name": "Platform Service (docker image)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2603692"
+	},
+	"item": [
+		{
+			"name": "Get All Platforms Docker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{PlatformURLDocker}}/Platforms",
+					"host": [
+						"{{PlatformURLDocker}}"
+					],
+					"path": [
+						"Platforms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Platform By Id Docker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{basePlatformURLDockerPlatformDockerURL}}/Platforms/2",
+					"host": [
+						"{{basePlatformURLDockerPlatformDockerURL}}"
+					],
+					"path": [
+						"Platforms",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Platform Docker",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Docker\",\r\n    \"publisher\": \"Docker\",\r\n    \"cost\": \"Free\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PlatformURLDocker}}/Platforms",
+					"host": [
+						"{{PlatformURLDocker}}"
+					],
+					"path": [
+						"Platforms"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
